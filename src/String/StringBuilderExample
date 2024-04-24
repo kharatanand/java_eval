@@ -1,0 +1,23 @@
+package String;
+
+public class StringBuilderExample {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Hello");
+
+        // Append characters
+        sb.append(" World");
+        
+        System.out.println(sb.toString()); 
+
+        // Insert characters at a specific position
+        sb.insert(5, ", ");
+
+        // Delete characters
+        sb.delete(5, 7);
+
+        // Replace characters
+        sb.replace(6, 11, "Java");
+
+        System.out.println(sb.toString());  
+    }
+}
